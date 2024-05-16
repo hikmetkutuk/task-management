@@ -7,3 +7,7 @@
 ``npm run dev``
 
 ``php artisan tinker``
+
+``php artisan make:model Project -fm``
+
+``php artisan migrate --seed``

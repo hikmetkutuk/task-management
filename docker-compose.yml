@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15.5
+    container_name: taskman-db
+    environment:
+      POSTGRES_DB: taskman
+      POSTGRES_USER: taskman
+      POSTGRES_PASSWORD: taskman
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_laravel_taskman:/var/lib/postgresql/data
+
+volumes:
+    postgres_data_laravel_taskman:
