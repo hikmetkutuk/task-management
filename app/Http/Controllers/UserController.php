@@ -11,6 +11,21 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
+    /**
+     * @OA\Get(
+     *     path="/api/user",
+     *     tags={"User"},
+     *     summary="List Users",
+     *     security={
+     *           {"X-Api-Key": {}}
+     *       },
+     *     @OA\Response(
+     *         response="200",
+     *         description="Kullanıcıları listeler.",
+     *         @OA\JsonContent()
+     *     ),
+     * )
+     */
     public function index()
     {
         //

@@ -15,3 +15,10 @@
 ``php artisan migrate:refresh --seed``
 
 ``php artisan make:controller ProjectController --model=Project --requests --resource``
+
+### swagger
+``composer require "darkaonline/l5-swagger``
+
+``php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"``
+
+``php artisan l5-swagger:generate``

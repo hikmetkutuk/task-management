@@ -5,3 +5,4 @@
 ![Laravel](https://img.shields.io/static/v1?&logo=laravel&label=laravel&message=11.7.0&color=ff2d20&style=for-the-badge)
 ![Vite](https://img.shields.io/static/v1?&logo=vite&label=vite&message=5.0&color=646cff&style=for-the-badge)
 ![Postgres](https://img.shields.io/static/v1?&logo=postgresql&label=postgre%20sql&message=15.5&color=336791&style=for-the-badge)
+![Swagger](https://img.shields.io/static/v1?&logo=swagger&label=swagger&message=3.0.0&color=85ea2d&style=for-the-badge)
