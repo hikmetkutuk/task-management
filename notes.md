@@ -11,3 +11,7 @@
 ``php artisan make:model Project -fm``
 
 ``php artisan migrate --seed``
+
+``php artisan migrate:refresh --seed``
+
+``php artisan make:controller ProjectController --model=Project --requests --resource``
