@@ -5,6 +5,30 @@
         "version": "0.0.1"
     },
     "paths": {
+        "/project": {
+            "get": {
+                "tags": [
+                    "Project"
+                ],
+                "summary": "List Projects",
+                "operationId": "3f7f71d225f8770410e2b47e59f44866",
+                "responses": {
+                    "200": {
+                        "description": "Projeleri listeler.",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "X-Api-Key": []
+                    }
+                ]
+            }
+        },
         "/api/user": {
             "get": {
                 "tags": [
