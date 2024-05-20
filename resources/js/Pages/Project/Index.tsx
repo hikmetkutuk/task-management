@@ -32,7 +32,6 @@ export default function Index({
 
         searchFieldChanged(name, e.target.value);
     };
-
     return (
         <AuthenticatedLayout
             user={auth.user}
@@ -71,7 +70,9 @@ export default function Index({
                                         <th className="px-3 py-3">
                                             <SelectInput
                                                 className="w-full"
-                                                defaultValue={queryParams.status}
+                                                defaultValue={
+                                                    queryParams.status
+                                                }
                                                 onChange={(e) =>
                                                     searchFieldChanged(
                                                         "status",

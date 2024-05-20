@@ -1,4 +1,4 @@
-import {LinkItem} from "@/Interfaces/ILinkItem";
+import { LinkItem } from "@/Interfaces/ILinkItem";
 
 export interface User {
     id: number;
@@ -15,15 +15,19 @@ export interface Project {
     due_date: string;
     status: string;
     image: string;
-    createdBy: User
+    createdBy: User;
 }
 
-export type PageProps<T extends Record<string, unknown> = Record<string, unknown>> = T & {
+export type PageProps<
+    T extends Record<string, unknown> = Record<string, unknown>,
+> = T & {
     auth: {
         user: User;
     };
     projects: {
-        meta: LinkItem[];
+        meta: {
+            links: LinkItem[];
+        };
         data: Project[];
     };
 };
